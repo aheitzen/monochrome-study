@@ -4,10 +4,10 @@ html, body {
 	
 }
 
- img {
+ div#landing-page {
  	height: 100%;
 	width: 100%;
-	background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../images/straw.jpg"),;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
@@ -16,5 +16,5 @@ html, body {
 	display: flex;
     justify-content: center;
     align-items: center;
-	}
+}
 
