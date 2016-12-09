@@ -10,7 +10,7 @@ var timer = setInterval(function(){
 
 $(document).ready(function () {
 	$("div#pink-box").mouseover(function(){
-		$(this).html('some random text');
+		$(this).html('Full Name: Alexa Heitzenrader<br/>Skillset: HTML5/CSS3/SASS & JavaScript/jQuery & Bootstrap/Photoshop<br/>');
 	}).mouseout(function() {
 		$(this).html('<p id="about">about</p>');
 	});
