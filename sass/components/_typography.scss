@@ -36,8 +36,20 @@ p {
 ul#hover-hand {
 	i.fa.fa-hand-paper-o {
 		visibility: hidden;
+		font-size: 18px;
 	}
 	&:hover i.fa.fa-hand-paper-o {
+		  visibility: visible;
+		  font-size: 18px;
+	}
+}
+
+ul#hover-star {
+	i.fa.fa-star-o {
+		visibility: hidden;
+		font-size: 18px;
+	}
+	&:hover i.fa.fa-star-o {
 		  visibility: visible;
 		  font-size: 18px;
 	}
@@ -46,8 +58,8 @@ ul#hover-hand {
 i.fa.fa-hand-paper-o {
 	animation-name: shake;
 	-webkit-animation: shake 0.5s alternate infinite; 
-  	-moz-animation:    shake 0.5s alternate infinite; 
-  	animation:         shake 0.5s alternate infinite; 
+  	-moz-animation: shake 0.5s alternate infinite; 
+  	animation: shake 0.5s alternate infinite; 
 	-webkit-transform-origin: 50% 100%;
 	-moz-transform-origin: 50% 100%;
 	-ms-transform-origin: 50% 100%;
@@ -67,8 +79,14 @@ i.fa.fa-hand-paper-o {
 	transform: rotate(20deg);}
 }
 
+i.fa.fa-star-o {
+	animation-name: flash;
+	animation: flash .50s infinite alternate;
+}
 
-
+@keyframes flash {
+	to { transform: scale(1.2); }
+}
 
 span#selector {
 	font-family: 'Cedarville Cursive', cursive;
@@ -84,7 +102,7 @@ img {
 
 
 div#ocean {
-	background-image: url("http://doge2048.com/meta/doge-600.png");
+	// background-image: url("http://doge2048.com/meta/doge-600.png");
 	height: 500px;
 	width: 500px;
 	z-index: -1;
