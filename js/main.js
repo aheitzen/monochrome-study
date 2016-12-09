@@ -7,3 +7,11 @@ var timer = setInterval(function(){
 		currentIndex = 0;
 	}
  }, 5000);
+
+$(document).ready(function () {
+	$("div#pink-box").mouseover(function(){
+		$(this).html('some random text');
+	}).mouseout(function() {
+		$(this).html('<p id="about">about</p>');
+	});
+});
