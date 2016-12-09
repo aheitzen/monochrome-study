@@ -9,15 +9,6 @@ html, body {
  div#landing-page {
  	height: 100%;
 	width: 100%;
-	// background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../images/straw.jpg"),;
-	// background-position: center center;
-	// background-repeat: no-repeat;
-	// background-attachment: fixed; 
-	// background-size: cover;
-	// background-color: white; 
-	// display: flex;
- //    justify-content: center;
- //    align-items: center;
     border: 6px solid $salmon;
 }
 
@@ -42,50 +33,65 @@ p {
 
 }
 
+ul#hover-hand {
+	i.fa.fa-hand-paper-o {
+		visibility: hidden;
+	}
+	&:hover i.fa.fa-hand-paper-o {
+		  visibility: visible;
+		  font-size: 18px;
+	}
+}
+
+i.fa.fa-hand-paper-o {
+	animation-name: shake;
+	-webkit-animation: shake 0.5s alternate infinite; 
+  	-moz-animation:    shake 0.5s alternate infinite; 
+  	animation:         shake 0.5s alternate infinite; 
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+@keyframes shake {
+	0% {-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+	100% {-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);}
+}
+
+
+
+
 span#selector {
 	font-family: 'Cedarville Cursive', cursive;
 	font-size: 40px;
-	}
-
-
-
-
-
-
- img {
-	height: 330px;
-	width: 770px;
-	// position: absolute;
-	// top: calc(50% -150px);
-	// left: calc(50% -150px);
-	z-index: 2;
-	display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-// cursor {
-//    background-color: url(http://www.colorhexa.com/fe9881.png);
-//    background-size: cover;
-//    color: url(http://www.colorhexa.com/fe9881.png);
-//    height: 100%;
-//    width: 100%;
-// }
 
-// div {
-//     cursor: url(../images/coral.png), auto;
-// }
+img {
+	height: 330px;
+	width: 770px;
+	z-index: 2;
+}
+
 
 div#ocean {
-	// background-image: url("http://meche.mit.edu/sites/default/files/styles/hero/public/slides/Research%20Oceans.jpg?itok=okSrE16D");
-
+	background-image: url("http://doge2048.com/meta/doge-600.png");
 	height: 500px;
 	width: 500px;
 	z-index: -1;
 	float: right;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	// background-attachment: fixed; 
 	background-size: cover;
 	background-color: #FBBEC6; 
 	display: flex;
@@ -93,5 +99,13 @@ div#ocean {
     align-items: center;
     margin-left: 700px;
     position: absolute;
+    &:hover {
+    background-color: white;
+	cursor: pointer;
+	box-shadow: 0px 0px 50px $orange;
+	background-color: white;
+
+    }
 }
+
 
