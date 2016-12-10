@@ -10,7 +10,7 @@ var timer = setInterval(function(){
 
 $(document).ready(function () {
 	$("div#pink-box").mouseover(function(){
-		$(this).html('Full Name: Alexa Heitzenrader<br/>Skillset: HTML5/CSS3/SASS & JavaScript/jQuery & Bootstrap/Photoshop<br/>');
+		$(this).html('<p>Hi Friends!</p><br/><p id="second-about">Welcome to my portfolio where you can view my past and current projects. I specialize in front-end development with a focus on responsive design and user interface. When I am not coding you can find me reading or running off to join the circus.</p>');
 	}).mouseout(function() {
 		$(this).html('<p class="about">about</p>');
 	});

@@ -3,7 +3,6 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	
 }
 
 div#landing-page {
@@ -71,12 +70,17 @@ div#pink-box {
     margin-left: 700px;
     position: absolute;
     &:hover {
+    // background-image: url('https://s-media-cache-ak0.pinimg.com/736x/d9/eb/11/d9eb118e26da9f8e160cc7a6c9989a0b.jpg');
+    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(225, 255, 255, 0.7)), url('https://s-media-cache-ak0.pinimg.com/736x/d9/eb/11/d9eb118e26da9f8e160cc7a6c9989a0b.jpg');
+    height: 500px;
+    width: 500px ;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: white;
 	cursor: pointer;
 	color: black;
 	box-shadow: 0px 0px 50px $orange;
 	z-index: 3; 
-	background-image: url()
 
     }
 }
@@ -126,4 +130,5 @@ p#info {
 // 		color: $pink;
 // 	}
 // }
+
 
