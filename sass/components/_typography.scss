@@ -33,7 +33,7 @@ p {
 	font-size: 40px;
 	font-family: 'Oswald', sans-serif;
 	margin-left: 15px;
-	&#about {
+	&.about {
 		color: white;
 		font-family: 'Cedarville Cursive', cursive;
 
@@ -88,13 +88,6 @@ div#orange-box {
 	height: 150px;
     width: 500px;
     margin-left: 300px;
- //    &:hover {
- //    	background-color: white;
-	// 	cursor: pointer;
-	// 	box-shadow: 0px 0px 50px $salmon;
-	// 	background-color: white;
-	// 	z-index: 3; 
-	// }
 }
 
 p#second-about {
@@ -102,4 +95,35 @@ p#second-about {
 	font-size: 20px;
 }
 
+div#full-orange {
+	height: 250px;
+	width: 300px;
+	background-color: $orange;
+	z-index: -1;
+	margin-left: 500px;
+	margin-top: -30px;
+	position: absolute;
+	&:hover {
+		background-color: white;
+		box-shadow: 0px 0px 50px $salmon;
+		z-index: 3;
+	}
+}
+
+p#info {
+	float: right;
+    margin-right: 40px;
+    margin-top: 120px;
+    color: white;
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+// i.fa {
+// 	font-size: 50px;
+// 	margin: 0 auto;
+// 	.fa-github {
+// 		text-align: center;
+// 		color: $pink;
+// 	}
+// }
 
