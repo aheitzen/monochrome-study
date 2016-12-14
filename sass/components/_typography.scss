@@ -53,7 +53,6 @@ img {
 	z-index: 2;
 }
 
-
 div#pink-box {
 	// background-image: url("http://doge2048.com/meta/doge-600.png");
 	height: 500px;
@@ -121,6 +120,18 @@ p#info {
     margin-top: 120px;
     color: white;
 	font-family: 'Cedarville Cursive', cursive;
+}
+
+label {
+	color: $pink;
+	font-size: 40px;
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+span.languages {
+	font-family: 'Oswald', sans-serif;
+	color: $orange;
+	font-family: 20px;
 }
 
 // i.fa {
