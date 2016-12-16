@@ -23,3 +23,11 @@ $(document).ready(function () {
 		$(this).html('<p id="info">stalk me</p>');
 	});
 });
+
+// $(document).ready(function(){
+//   $("#trail-blazer").hover(function(){
+//     $("#trail-blazer").css("display","block");
+//     },function(){
+//     $("#para").css("display","none");
+//   });
+// });
