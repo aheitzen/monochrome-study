@@ -3,12 +3,13 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	border: 4px solid $salmon;
 }
 
-div#landing-page {
+div.landing-page {
  	height: 100%;
 	width: 100%;
-    border: 6px solid $salmon;
+    // border: 6px solid $salmon;
     position: fixed;
 }
 
@@ -141,5 +142,142 @@ span.languages {
 // 		color: $pink;
 // 	}
 // }
+
+// .grid {
+// 	height: 293px;
+// 	width: 293px;
+// }
+
+div.col-md-3.grid {
+	height: 293px;
+	width: 293px;
+	background-image: url("images/highqualitybadge.png");
+}
+
+// img#grid {
+// 	height: 293;
+// 	width: 293;
+// 	background-image: url("images/highqualitybadge.png");
+// }
+
+// .grid {
+// 	:nth-child(even) {
+// 		background-color: $orange;
+// 	}
+// 	height: 273px;
+// 	width: 273px;
+// 	background-color: pink;
+// 	:hover {
+// 		background-color: red;
+// 	}
+
+// }
+
+.grid-heart {
+	height: 273px;
+	width: 273px;
+	background-color: $orange;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	i.glyphicon.glyphicon-heart-empty {
+		color: white;
+		font-size: 50px;
+    }
+    &:hover {
+    	background: url('../images/highqualitybadge.png');
+    	cursor: none;
+    	background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	i.glyphicon.glyphicon-heart-empty {
+    		display: none;
+    	}
+    }
+}
+
+.grid-flash {
+	height: 273px;
+	width: 273px;
+	background-color: $salmon;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    i.glyphicon.glyphicon-flash {
+    	color: white;
+    	font-size: 50px;
+    }
+    &:hover {
+		background: url('../images/kendrick-parks-80.png');
+		cursor: none;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		i.glyphicon.glyphicon-flash {
+			display: none;
+		}
+	}
+
+}
+
+.grid-shades {
+	height: 273px;
+	width: 273px;
+	background-color: $salmon;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    i.glyphicon.glyphicon-sunglasses {
+    	color: white;
+    	font-size: 50px;
+    }
+    &:hover {
+		background: url('../images/kendrick-parks-80.png');
+		cursor: none;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		i.glyphicon.glyphicon-sunglasses {
+			display: none;
+		}
+	}
+
+}
+
+.grid-loli {
+	height: 273px;
+	width: 273px;
+	background-color: $orange;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    i.glyphicon.glyphicon-ice-lolly-tasted {
+    	color: white;
+    	font-size: 50px;
+    }
+    &:hover {
+		background: url('../images/kendrick-parks-80.png');
+		cursor: none;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		i.glyphicon.glyphicon-ice-lolly-tasted {
+			display: none;
+		}
+	}
+
+}
 
 

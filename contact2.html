@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>{{captchaHead}}
+<meta charset="utf-8">
+<title>Sunshine Metals - Main Contact Form</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<style type="text/css">
+	body {
+		font-family: 'Lato', sans-serif;
+	}
+	div {
+		padding:5px 0 6px 0;
+	}
+	.errorValidation {
+		border: 2px solid red;
+		box-shadow: 0px 0px 10px red;
+		background-color: pink;
+	}
+	input:focus {
+		outline: none;
+	}
+	input[type="submit"] {
+		margin-top: 12px;
+		background-color: #b74c29;
+		border-radius: 10px;
+		padding: 12px 18px;
+		color:#fff;
+	}
+	input[type="text"], input[type="email"], select, textarea{
+		background-color: #e3dfde;
+		padding: 8px;
+		color:#4e5454;
+		width:200px;
+		margin-top: 3px;
+	}
+	textarea {
+		height: 95px;
+	}
+</style>
+<script language="javascript">
+	function validateForm() {
+		var validated = true;
+		$('.required').each(function(index, value) {
+			console.log(value);
+			console.log($(value).val());
+			if($(value).val() == "") {
+				validated = false;
+				$(value).addClass("errorValidation"); 
+			} else {
+				$(value).removeClass("errorValidation");
+			}
+		});
+		return validated;
+	}
+
+	function displayState(country) {
+	  if (country == "united_states") { // hide the div that is not selected
+		document.getElementById('state_div').style.display = "block";
+	  } else {
+		document.getElementById('state_div').style.display = "none";
+	  }
+	}
+
+	$(document).ready(function() {
+		$('#submit').click(function() {
+			validateForm();
+		})
+		$('form').submit(function(event){
+			if (!validateForm()) event.preventDefault();
+
+		});
+	});
+</script>
+</head>
+
+<body>
+{{form}}
+<div>First Name:*<br><input name="first_name" class="required" type="text" required id="first_name" tabindex="1"></div>
+<div>Last Name:*<br><input name="last_name" class="required" type="text" required id="last_name" tabindex="2"></div>
+<div>Email:*<br><input name="email" class="required" type="email" required id="email" tabindex="3"></div>
+<div>State:*<br><select name="state" class="required" id="country" tabindex="4">
+		<option value="alabama">Alabama</option>
+		<option value="alaska">Alaska</option>
+		<option value="arizona">Arizona</option>
+		<option value="arkansas">Arkansas</option>
+		<option value="california">California</option>
+		<option value="colorado">Colorado</option>
+		<option value="connecticut">Connecticut</option>
+		<option value="delaware">Delaware</option>
+		<option value="district_of_columbia">District of Columbia</option>
+		<option value="florida">Florida</option>
+		<option value="georgia">Georgia</option>
+		<option value="hawaii">Hawaii</option>
+		<option value="idaho">Idaho</option>
+		<option value="illinois">Illinois</option>
+		<option value="indiana">Indiana</option>
+		<option value="iowa">Iowa</option>
+		<option value="kansas">Kansas</option>
+		<option value="kentucky">Kentucky</option>
+		<option value="louisiana">Louisiana</option>
+		<option value="maine">Maine</option>
+		<option value="maryland">Maryland</option>
+		<option value="massachusetts">Massachusetts</option>
+		<option value="michigan">Michigan</option>
+		<option value="minnesota">Minnesota</option>
+		<option value="mississippi">Mississippi</option>
+		<option value="missouri">Missouri</option>
+		<option value="montana">Montana</option>
+		<option value="nebraska">Nebraska</option>
+		<option value="nevada">Nevada</option>
+		<option value="new_hampshire">New Hampshire</option>
+		<option value="new_jersey">New Jersey</option>
+		<option value="new_mexico">New Mexico</option>
+		<option value="new_york">New York</option>
+		<option value="north_carolina">North Carolina</option>
+		<option value="north_dakota">North Dakota</option>
+		<option value="ohio">Ohio</option>
+		<option value="oklahoma">Oklahoma</option>
+		<option value="oregon">Oregon</option>
+		<option value="pennsylvania">Pennsylvania</option>
+		<option value="rhode_island">Rhode Island</option>
+		<option value="south_carolina">South Carolina</option>
+		<option value="south_dakota">South Dakota</option>
+		<option value="tennessee">Tennessee</option>
+		<option value="texas">Texas</option>
+		<option value="utah">Utah</option>
+		<option value="vermont">Vermont</option>
+		<option value="virginia">Virginia</option>
+		<option value="washington">Washington</option>
+		<option value="west_virginia">West Virginia</option>
+		<option value="wisconsin">Wisconsin</option>
+		<option value="wyoming">Wyoming</option>
+	</select></div>
+<div>Market:*<br><select name="market" class="required" id="market" required tabindex="5">
+		<option value="domestic_sales">Domestic Sales</option>
+		<option value="export_sales">Export Sales</option>
+		<option value="shipping_inquiries">Shipping Inquiries</option>
+		<option value="technical_questions">Technical Questions</option>
+		<option value="general_manager">General Manager</option>
+		<option value="web_administrator">Web Administrator</option>
+	</select></div>
+<div>Area of Concern:<br><select name="area_of_concern" id="area_of_concern" tabindex="6">
+	<option value="aerospace">Aerospace</option>
+	<option value="marine">Marine</option>
+	<option value="general">General</option>
+</select></div>
+	<div>Message:<br><textarea name="message" type="textarea"  id="mesaage" tabindex="7"></textarea></div>
+{{captcha}}
+<div><input type="submit" id="submit" value="Submit" tabindex="8"></div>
+</form>
+</body>
+</html>
