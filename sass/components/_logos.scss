@@ -115,3 +115,9 @@
 	// }
 
 }
+
+a {
+&:hover, &:visited, &:active, &:link {
+	text-decoration: none;
+}
+}
