@@ -1,0 +1,12 @@
+.grid-heart, .grid-shades {
+	@media screen and (max-width: $member-break) {
+    	margin-bottom: 20px;
+
+	}
+}
+
+#row-container {
+	@media screen and (max-width: $medium-break) {
+		overflow: scroll;
+	}
+}
