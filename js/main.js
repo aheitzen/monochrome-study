@@ -23,6 +23,13 @@ $(document).ready(function () {
 		$(this).html('<p id="info">stalk me</p>');
 	});
 });
+$(document).ready(function() {
+	$("#card").flip({
+  	axis: 'y',
+  	trigger: 'hover'
+	});
+});
+
 
 // $(document).ready(function(){
 //   $("#trail-blazer").hover(function(){
