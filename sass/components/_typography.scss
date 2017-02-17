@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
 html, body {
+	// min-height: 100%;
 	height: 100%;
 	width: 100%;
 	border: 4px solid $salmon;
+}
+
+.conta {
+	height: 100%;
 }
 
 div.landing-page {
@@ -71,7 +76,7 @@ div#pink-box {
     position: absolute;
     &:hover {
     // background-image: url('https://s-media-cache-ak0.pinimg.com/736x/d9/eb/11/d9eb118e26da9f8e160cc7a6c9989a0b.jpg');
-    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(225, 255, 255, 0.7)), url('https://s-media-cache-ak0.pinimg.com/736x/d9/eb/11/d9eb118e26da9f8e160cc7a6c9989a0b.jpg');
+    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(225, 255, 255, 0.7));
     height: 500px;
     width: 500px ;
     background-repeat: no-repeat;
@@ -184,19 +189,19 @@ div.col-md-3.grid {
 		color: white;
 		font-size: 50px;
     }
-    &:hover {
-    	background: url('../images/highqualitybadge.png');
-    	cursor: none;
-    	background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	i.glyphicon.glyphicon-heart-empty {
-    		display: none;
-    	}
-    }
+  //   &:hover {
+  //   	background: url('../images/highqualitybadge.png');
+  //   	cursor: none;
+  //   	background-position: center center;
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// display: flex;
+  //   	justify-content: center;
+  //   	align-items: center;
+  //   	i.glyphicon.glyphicon-heart-empty {
+  //   		display: none;
+  //   	}
+  //   }
 }
 
 .grid-flash {
@@ -210,19 +215,19 @@ div.col-md-3.grid {
     	color: white;
     	font-size: 50px;
     }
-    &:hover {
-		background: url('../images/kendrick-parks-80.png');
-		cursor: none;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		i.glyphicon.glyphicon-flash {
-			display: none;
-		}
-	}
+ //    &:hover {
+	// 	background: url('../images/kendrick-parks-80.png');
+	// 	cursor: none;
+	// 	background-position: center center;
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	i.glyphicon.glyphicon-flash {
+	// 		display: none;
+	// 	}
+	// }
 
 }
 
@@ -237,19 +242,19 @@ div.col-md-3.grid {
     	color: white;
     	font-size: 50px;
     }
-    &:hover {
-		background: url('../images/kendrick-parks-80.png');
-		cursor: none;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		i.glyphicon.glyphicon-sunglasses {
-			display: none;
-		}
-	}
+ //    &:hover {
+	// 	background: url('../images/kendrick-parks-80.png');
+	// 	cursor: none;
+	// 	background-position: center center;
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	i.glyphicon.glyphicon-sunglasses {
+	// 		display: none;
+	// 	}
+	// }
 
 }
 
@@ -264,19 +269,19 @@ div.col-md-3.grid {
     	color: white;
     	font-size: 50px;
     }
-    &:hover {
-		background: url('../images/kendrick-parks-80.png');
-		cursor: none;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		i.glyphicon.glyphicon-ice-lolly-tasted {
-			display: none;
-		}
-	}
+ //    &:hover {
+	// 	background: url('../images/kendrick-parks-80.png');
+	// 	cursor: none;
+	// 	background-position: center center;
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	i.glyphicon.glyphicon-ice-lolly-tasted {
+	// 		display: none;
+	// 	}
+	// }
 
 }
 
