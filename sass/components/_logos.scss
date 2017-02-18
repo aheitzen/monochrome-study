@@ -71,25 +71,12 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-
-    i.glyphicon.glyphicon-sunglasses {
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
+	i.glyphicon.glyphicon-sunglasses {
     	color: white;
     	font-size: 50px;
     }
- //    &:hover {
-	// 	background: url('../images/kendrick-parks-80.png');
-	// 	cursor: none;
-	// 	background-position: center center;
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	align-items: center;
-	// 	i.glyphicon.glyphicon-sunglasses {
-	// 		display: none;
-	// 	}
-	// }
-
 }
 
 .grid-loli {
@@ -100,6 +87,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
     i.glyphicon.glyphicon-ice-lolly-tasted {
     	color: white;
     	font-size: 50px;
