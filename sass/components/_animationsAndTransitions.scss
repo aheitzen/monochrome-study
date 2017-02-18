@@ -53,28 +53,3 @@ i.fa.fa-star-o {
 @keyframes flash {
 	to { transform: scale(1.2); }
 }
-
-//home animation
-ul#hover-house {
-	i.fa.fa-home {
-		visibility: hidden;
-		font-size: 18px;
-	}
-	&:hover i.fa.fa-home {
-		  visibility: visible;
-		  font-size: 18px;
-	}
-}
-
-i.fa.fa-home {
-	animation-name: home;
-	animation: flash .50s infinite alternate;
-}
-
-@keyframes home {
-	to { transform: scale(1.2); }
-}
-
-// cursor {
-//    background: url('images/cursor.png'), auto;
-// }
