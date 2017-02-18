@@ -13,6 +13,8 @@
 	display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
 	i.glyphicon.glyphicon-heart-empty {
 		color: white;
 		font-size: 50px;
@@ -40,6 +42,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
     i.glyphicon.glyphicon-flash {
     	color: white;
     	font-size: 50px;
@@ -117,7 +121,18 @@
 }
 
 a {
-&:hover, &:visited, &:active, &:link {
-	text-decoration: none;
+	&:hover, &:visited, &:active, &:link {
+		text-decoration: none;
+	}
 }
+
+span {
+	font-size: 40px;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-align: center;
+	&.project-desc {
+		margin-top: 10px;
+		font-size: 25px;
+	}
 }
