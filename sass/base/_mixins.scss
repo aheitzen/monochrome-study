@@ -1,9 +1,24 @@
 .grid-heart, .grid-shades {
 	@media screen and (max-width: $member-break) {
     	margin-bottom: 20px;
-
-	}
+    }
 }
+
+// .grid-heart, .grid-shades, .grid-star, .grid-flash {
+// @media screen and (max-width: $member-break) {
+// 		background-color: red;
+// 	}
+// }
+// STRETCH GOAL: ALTERNAING COLORS FOR TABLET SIZE
+// #row-container {
+// @media screen and (min-width: $member-break) and (max-width: $medium-break) {
+// 		.grid-heart, .grid-shades, .grid-star, .grid-flash {
+// 			background-color: red;
+// 		}
+		
+// 	}
+// }
+
 
 #row-container {
 	@media screen and (max-width: $medium-break) {
