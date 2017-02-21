@@ -21,16 +21,27 @@
 	height: 400px;
 	width: 400px;
 	background-color: $pink;
+	
 	&:hover {
-		background-image: url('../images/whaleloop.png');
+		background: url('../images/whaleloop.png');
 		height: 400px;
 		width: 400px;
 		cursor: pointer;
+		
 	}
 }
 
 #creative-logo {
-	height: 500px;
-	width: 800px;
+	height: 400px;
+	width: 950px;
+	background-color: $orange;
+	float: right;
+	&:hover {
+		background-image: url('../images/alwaysbecreative.png');
+		height: 400px;
+		width: 950px;
+		cursor: pointer;
+
+	}
 }
 
