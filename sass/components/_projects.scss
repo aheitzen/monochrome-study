@@ -17,31 +17,14 @@
 // 	width: 400px; 
 // }
 
-#whale-loop {
-	height: 400px;
-	width: 400px;
+.logo-pink-box {
+	height: 350px;
+	width: 528px;
 	background-color: $pink;
-	
-	&:hover {
-		background: url('../images/whaleloop.png');
-		height: 400px;
-		width: 400px;
-		cursor: pointer;
-		
-	}
 }
 
-#creative-logo {
-	height: 400px;
-	width: 950px;
-	background-color: $orange;
-	float: right;
-	&:hover {
-		background-image: url('../images/alwaysbecreative.png');
-		height: 400px;
-		width: 950px;
-		cursor: pointer;
-
-	}
+.logo-orange-box {
+	height: 350px;
+	width: 528px;
+	border: $orange 3px solid;
 }
-
