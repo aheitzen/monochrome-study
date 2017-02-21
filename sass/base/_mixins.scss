@@ -8,5 +8,11 @@
 #row-container {
 	@media screen and (max-width: $medium-break) {
 		overflow: scroll;
+		.grid-shades {
+			background-color: $orange;
+		}
+		.grid-star {
+			background-color: $salmon;
+		}
 	}
 }

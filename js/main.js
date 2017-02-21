@@ -31,10 +31,9 @@ $(document).ready(function() {
 });
 
 
-// $(document).ready(function(){
-//   $("#trail-blazer").hover(function(){
-//     $("#trail-blazer").css("display","block");
-//     },function(){
-//     $("#para").css("display","none");
-//   });
-// });
+$(document).ready(function() {
+	$('.grid').masonry({
+  		itemSelector: '.grid-item',
+  		columnWidth: 200
+	});
+});
