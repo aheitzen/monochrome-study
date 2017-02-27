@@ -1,21 +1,21 @@
 
 
 .logo-pink-box {
-	height: 340px; //350px
+	height: 300px; //350px
 	width: 100%; //528px
 	// background:linear-gradient(rgba(252, 191, 199, 0.8), rgba(252, 191, 199, 0.3)), url(../images/highqualitybadge.png);
 	background-color: $pink;
 }
 
 .logo-orange-box {
-	height: 340px;
+	height: 300px;
 	width: 100%;
 	// border: $orange 3px solid;
 	background-color: $orange;
 }
 
 .logo-salmon-box {
-	height: 340px;
+	height: 300px;
 	width: 100%;
 	background-color: $salmon;
 }
@@ -26,4 +26,9 @@ span {
     align-items: center;
     -webkit-flex-flow: column wrap;
    	flex-flow: column wrap;
+}
+
+#test-container {
+	padding-left: 20px;
+	padding-right: 20px;
 }
