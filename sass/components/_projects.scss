@@ -1,26 +1,10 @@
 
 
 .logo-pink-box {
-	height: 300px; //350px
+	height: 340.81px; //350px
 	width: 100%; //528px
 	// background:linear-gradient(rgba(252, 191, 199, 0.8), rgba(252, 191, 199, 0.3)), url(../images/highqualitybadge.png);
 	background-color: $pink;
-}
-
-.logo-orange-box {
-	height: 300px;
-	width: 100%;
-	// border: $orange 3px solid;
-	background-color: $orange;
-}
-
-.logo-salmon-box {
-	height: 300px;
-	width: 100%;
-	background-color: $salmon;
-}
-
-span {
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +12,56 @@ span {
    	flex-flow: column wrap;
 }
 
+.logo-orange-box {
+	height: 340.81px;
+	width: 100%;
+	// border: $orange 3px solid;
+	background-color: $orange;
+}
+
+.logo-salmon-box {
+	height: 340.81px;
+	width: 100%;
+	background-color: $salmon;
+}
+
+.logo-orange-border {
+	border: $orange 5px solid;
+	height: 340.81px;
+	width: 100%;
+}
+
+.logo-pink-border {
+	border: $pink 5px solid;
+	height: 340.81px;
+	width: 100%;
+}
+
+.logo-salmon-border {
+	border: $salmon 5px solid;
+	height: 340.81px;
+	width: 100%;
+}
+
+span#salmon-text {
+	// display: flex;
+ //    justify-content: center;
+ //    align-items: center;
+    // -webkit-flex-flow: column wrap;
+   	// flex-flow: column wrap;
+   	text-align: center;
+   	color: $salmon;
+   	font-family: 'Cedarville Cursive', cursive;
+   	font-size: 20px;
+}
+
 #test-container {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.fa.fa-diamond {
+	font-size: 50px;
+	color: white;
+	text-align: center;
 }
