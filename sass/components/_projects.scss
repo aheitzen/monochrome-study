@@ -23,12 +23,22 @@
 	height: 340.81px;
 	width: 100%;
 	background-color: $salmon;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
 }
 
 .logo-orange-border {
 	border: $orange 5px solid;
 	height: 340.81px;
 	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
 }
 
 .logo-pink-border {
@@ -43,25 +53,35 @@
 	width: 100%;
 }
 
-span#salmon-text {
-	// display: flex;
- //    justify-content: center;
- //    align-items: center;
-    // -webkit-flex-flow: column wrap;
-   	// flex-flow: column wrap;
-   	text-align: center;
-   	color: $salmon;
-   	font-family: 'Cedarville Cursive', cursive;
-   	font-size: 20px;
-}
+span {
+	&#salmon-text {
+	   	text-align: center;
+	   	color: $salmon;
+	   	font-family: 'Cedarville Cursive', cursive;
+	   	font-size: 35px;
+	}
+	// &#white-span-text {
+	// 	text-align: center;
+	//    	color: white;
+	//    	font-family: 'Cedarville Cursive', cursive;
+	//    	font-size: 35px;
+	//    }
+	}
 
 #test-container {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
-.fa.fa-diamond {
-	font-size: 50px;
-	color: white;
-	text-align: center;
+.fa {
+	&.fa-diamond {
+		font-size: 50px;
+		color: white;
+		text-align: center;
+	}
+	&.fa.fa-bolt {
+		font-size: 50px;
+		color: white;
+		text-align: center;
+	}
 }
