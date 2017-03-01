@@ -53,3 +53,28 @@ i.fa.fa-star-o {
 @keyframes flash {
 	to { transform: scale(1.2); }
 }
+
+ul#hover-peace-sign {
+	i.fa.fa-hand-peace-o {
+		visibility: hidden;
+		font-size: 18px;
+	}
+	&:hover i.fa-hand-peace-o {
+		visibility: visible;
+		font-size: 18px;
+	}
+}
+
+i.fa.fa-hand-peace-o {
+	animation-name: peace-sign-flash;
+	animation: peace-sign-flash 2s infinite;
+}
+
+@keyframes peace-sign-flash {
+	0%, 50%, 100% {
+      opacity: 1;
+   }
+   25%, 75% {
+      opacity: 0;
+   }
+}

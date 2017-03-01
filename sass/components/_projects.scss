@@ -72,7 +72,41 @@
    	flex-flow: column wrap;
 }
 
+.logo-wide-orange-border {
+	border: $orange 5px solid;
+	height: 340.81px;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
+}
 
+.logo-wide-salmon-box {
+	height: 300.81px; //340.81px
+	width: 100%;
+	margin-top: 20px;
+	background-color: $salmon;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
+}
+
+.logo-wide-salmon-border {
+	border: $salmon 5px solid;
+	height: 280.81px;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
+}
 
 .logo-wide-pink-box {
 	background-color: $pink;
