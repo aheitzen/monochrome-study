@@ -13,15 +13,22 @@
 }
 
 .logo-orange-box {
-	height: 340.81px;
+	height: 240.81px; //340.81px
 	width: 100%;
 	// border: $orange 3px solid;
 	background-color: $orange;
+	margin-top: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
 }
 
 .logo-salmon-box {
-	height: 340.81px;
+	height: 240.81px; //340.81px
 	width: 100%;
+	margin-top: 20px;
 	background-color: $salmon;
 	display: flex;
     justify-content: center;
@@ -32,7 +39,7 @@
 
 .logo-orange-border {
 	border: $orange 5px solid;
-	height: 340.81px;
+	height: 570.81px; //340.81px
 	width: 100%;
 	display: flex;
     justify-content: center;
@@ -51,6 +58,11 @@
 	border: $salmon 5px solid;
 	height: 340.81px;
 	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;
 }
 
 span {
@@ -60,13 +72,13 @@ span {
 	   	font-family: 'Cedarville Cursive', cursive;
 	   	font-size: 35px;
 	}
-	// &#white-span-text {
-	// 	text-align: center;
-	//    	color: white;
-	//    	font-family: 'Cedarville Cursive', cursive;
-	//    	font-size: 35px;
-	//    }
+	&#orange-text {
+		text-align: center;
+	   	color: $orange;
+	   	font-family: 'Cedarville Cursive', cursive;
+	   	font-size: 35px;
 	}
+}
 
 #test-container {
 	padding-left: 30px;
@@ -80,6 +92,11 @@ span {
 		text-align: center;
 	}
 	&.fa.fa-bolt {
+		font-size: 50px;
+		color: white;
+		text-align: center;
+	}
+	&.fa.fa-hashtag {
 		font-size: 50px;
 		color: white;
 		text-align: center;
