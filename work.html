@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://use.fontawesome.com/ed0dbdcf9f.js"></script>
 	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/jQueryFlip.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -18,6 +19,11 @@
 			<div class="row">
 				<nav>
 					<div class="col-md-6 pull-right">
+						<a href="logos.html">
+							<ul id="hover-peace-sign">My Work&nbsp; 
+								<i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+							</ul>
+						</a>
 						<a href="index.html">
 							<ul id="hover-star">Home&nbsp; 
 								<i class="fa fa-star-o" aria-hidden="true"></i>
@@ -31,10 +37,15 @@
 			</div>
 				<div class= "row">
 					<div class="col-md-3 col-sm-6">
-						<div class="logo-orange-border">
-							<span id="salmon-text">high quality badge</span>
-						<!-- 	<a href="images/roses.jpg" class="fancybox" title="Sample title"><img src="" /></a> -->
-
+						<div class="card">
+							<div class="front">
+								<div class="logo-orange-border">
+									<span id="salmon-text">high quality badge</span>
+								</div>
+							</div>
+							<div class="back">
+								<a href="images/vertical-test.jpg" data-type="image" class="fancybox"><img id="img-test" src="images/vertical-test.jpg" /></a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
@@ -60,7 +71,7 @@
 					
 				</div>
 				<!-- NEXT SECTION -->
-				<!-- <div class= "row">
+				<div class= "row">
 					<div class="col-md-3 col-sm-6">
 						<div class="logo-pink-box">
 							<i class="fa fa-diamond" aria-hidden="true"></i>
@@ -91,7 +102,7 @@
 							<i class="fa fa-diamond" aria-hidden="true"></i>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 </body>
