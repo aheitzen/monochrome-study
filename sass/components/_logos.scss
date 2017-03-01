@@ -6,6 +6,15 @@
     top: calc(50% - 273px);
 }
 
+#logo-container {
+    position: absolute;
+    height: 100%; //567px
+    width: calc(100% - 40px); //calc(100% - 40px)
+    // left: 20px;
+    // top: calc(50% - 273px);
+
+}
+
 .grid-heart {
 	height: 273px;
 	width: 100%;

@@ -15,6 +15,12 @@
 // 	}
 // }
 
+#logo-container {
+	@media screen and (max-width: $full-screen) {
+		overflow: scroll;
+	}
+}
+
 #row-container {
 	@media screen and (max-width: $medium-break) {
 		overflow: scroll;
