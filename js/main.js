@@ -31,9 +31,20 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+	$(".card-click").flip({
+  	// axis: 'y',
+  	trigger: 'click'
+	});
+});
+
+$(document).ready(function() {
     $('.fancybox').fancybox({
     	
    });
+});
+
+$(window).load(function(){
+	$('#myModal').modal('show');
 });
 
 

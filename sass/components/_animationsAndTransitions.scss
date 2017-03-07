@@ -79,7 +79,18 @@ i.fa.fa-hand-peace-o {
    }
 }
 
-#img-test {
-	height: 570.81px;
-	width: 100%;
+.modal-content {
+	border: 7px solid $salmon;
+	border-radius: 0px;
 }
+
+.modal-header {
+	border-bottom: 4px solid $salmon;
+}
+
+p#modal-font {
+	color: $salmon;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
