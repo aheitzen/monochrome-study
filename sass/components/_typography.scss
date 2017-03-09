@@ -26,7 +26,7 @@ p {
 	font-size: 40px;
 	font-family: 'Oswald', sans-serif;
 	margin-left: 15px;
-	&.about {
+	&.white-cursive {
 		color: white;
 		font-family: 'Cedarville Cursive', cursive;
 	}
@@ -35,46 +35,35 @@ p {
 
 span#selector {
 	font-family: 'Cedarville Cursive', cursive;
+	color: $salmon;
 	font-size: 40px;
 	mix-blend-mode: color-dodge;
 }
 
-div#pink-box {
-	height: 500px;
-	width: 500px;
-	z-index: -1;
+#about-box {
+	height: 400px;
+	width: 450px;
+	z-index: -3;
 	float: right;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
 	background-color: #FBBEC6; 
 	display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 700px;
-    position: relative;
-    &:hover {
-    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(225, 255, 255, 0.7));
-    height: 500px;
-    width: 500px ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: white;
-	cursor: pointer;
-	color: black;
-	box-shadow: 0px 0px 50px $orange;
-	z-index: 3; 
-
-    }
+    margin-top: -130px;
+    // margin-left: 700px;
 }
 
-div#orange-box {
-	position: absolute;
+#currently-box {
+	// position: absolute;
 	// background-color: $orange;
 	border: 5px solid $orange;
 	height: 150px;
     width: 500px;
-    margin-left: 300px;
+    margin-left: 250px;
+    margin-top: -150px;
 }
 
 p#second-about {
@@ -82,19 +71,21 @@ p#second-about {
 	font-size: 20px;
 }
 
-div#full-orange {
+#social-media-box {
 	height: 250px;
 	width: 300px;
 	background-color: $orange;
+	float: right;
 	z-index: -1;
-	margin-left: 500px;
-	margin-top: -30px;
-	position: absolute;
-	&:hover {
-		background-color: white;
-		box-shadow: 0px 0px 50px $salmon;
-		z-index: 3;
-	}
+	margin-right: 250px;
+	// margin-left: 500px;
+	// margin-top: -30px;
+	// position: absolute;
+	// &:hover {
+	// 	background-color: white;
+	// 	box-shadow: 0px 0px 50px $salmon;
+	// 	z-index: 3;
+	// }
 }
 
 p#info {
@@ -117,9 +108,9 @@ span.languages {
 	font-family: 20px;
 }
 
-img.img-responsive {
-	margin-right: 0;
-}
+// img.img-responsive {
+// 	margin-right: 0;
+// }
 
 
 
