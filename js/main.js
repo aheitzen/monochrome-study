@@ -8,13 +8,13 @@ var timer = setInterval(function(){
 	}
  }, 5000);
 
-// $(document).ready(function () {
-// 	$("div#pink-box").mouseover(function(){
-// 		$(this).html('<p>Hi Friends!</p><br/><p id="second-about">Welcome to my portfolio where you can view my past and current projects. I specialize in front-end development with a focus on responsive design and user interface. When I am not coding you can find me reading or running off to join the circus.</p>');
-// 	}).mouseout(function() {
-// 		$(this).html('<p class="about">about</p>');
-// 	});
-// });
+$(document).ready(function () {
+	$("#about-box").mouseover(function(){
+		$(this).html('<h3>Hi Friends!</h3><br/><p id="second-about">Welcome to my portfolio where you can view my past and current projects. I specialize in front-end development with a focus on responsive design and user interface. When I am not coding you can find me reading or running off to join the circus.</p>');
+	}).mouseout(function() {
+		$(this).html('<p class="white-cursive">about</p>');
+	});
+});
 
 // $(document).ready(function () {
 // 	$("#full-orange").mouseover(function(){
