@@ -38,9 +38,16 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $("[data-fancybox]").fancybox({
-    	
-   });
+	$('.emptyPinkBox, .emptyOrangeBox').click(function(){
+		console.log("I work")
+		$('a#display').toggleClass("imageShow")
+		// $("[data-fancybox]").fancybox({
+		// // Options will go here
+		// });
+		
+
+	});
+  
 });
 
 $(window).load(function(){
