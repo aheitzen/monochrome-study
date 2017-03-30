@@ -176,13 +176,52 @@ p#white-small-font {
 }
 
 
-#whaleLoop {
-	height: 340.8px;
+.image-flip {
+	height: 340.81px;
 	width: 100%;
 }
 
-#alwaysBeCreative {
+.emptyPinkBox {
+	height: 273px;
 	width: 100%;
-	height: 240.81px;
-	margin-top: 20px;
+	border: 7px solid $pink;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;   	
+   	i.fa.fa-diamond {
+   		font-size: 30px;
+   		color: $pink;
+   	}
+   	i.glyphicon.glyphicon-heart-empty {
+   		font-size: 30px;
+   		color: $pink;
+   	}
+}
+
+.emptyOrangeBox {
+	height: 273px;
+	width: 100%;
+	border: 7px solid $orange;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-flex-flow: column wrap;
+   	flex-flow: column wrap;   	
+   	i.glyphicon.glyphicon-star {
+   		font-size: 30px;
+   		color: $orange;
+   	}
+   	i.glyphicon.glyphicon-heart-empty {
+   		font-size: 30px;
+   		color: $orange;
+   	}
+   	i.fa.fa-bolt {
+   		font-size: 30px;
+   		color: $orange;
+   	}
+
 }
