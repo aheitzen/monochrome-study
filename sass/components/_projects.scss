@@ -226,11 +226,29 @@ p#white-small-font {
 
 }
 
-a#display img {
-	display: none;
-
+a.smallImage img {
+	height: 230px; //273px
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+a.largeImage img {
+	height: 273px;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .imageShow {
 	display: initial;
 }
