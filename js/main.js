@@ -8,6 +8,16 @@ var timer = setInterval(function(){
 	}
  }, 5000);
 
+var descriptionArray = ['And scrubs cant get no love from me', 'And heaven is a place on Earth', 'I cant fight this feeling anymore'];
+var currentIndex1 = 0
+var toggleDescription = function() {
+	$('#selector1').text(descriptionArray[currentIndex1]);
+	currentIndex++;
+	if (currentIndex1 == descriptionArray.length) {
+		currentIndex1 = 0;
+	}
+}
+
 $(document).ready(function () {
 	$("#about-box").mouseover(function(){
 		$(this).html('<h3>Hi Friends!</h3><br/><p id="second-about">Welcome to my portfolio where you can view my past and current projects. I specialize in front-end development with a focus on responsive design and user interface. When I am not coding you can find me reading or running off to join the circus.</p>');
